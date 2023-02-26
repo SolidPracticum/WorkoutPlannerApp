@@ -1,15 +1,17 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import "./App.scss";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route />
-      </Routes>
-    </>
-  );
-}
+    <div className="App">
+      <HomePage />
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PublicRoute Component={HomePage} />} />
+        </Routes>
+      </BrowserRouter> */}
+    </div>
+
 
 export default App;
