@@ -1,0 +1,67 @@
+.secondModal {
+  border-radius: 10px;
+  background-color: grey;
+  margin-left: 400px;
+  width: 500px;
+  height: 500px;
+}
+fieldset {
+  border-color: none;
+}
+h1,
+p {
+  text-align: center;
+  color: antiquewhite;
+}
+.womanIcon,
+.manIcon {
+  color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 130px;
+  height: 50px;
+  width: 50%;
+  border: 1px solid blanchedalmond;
+  border-radius: 5px;
+}
+button {
+  background-color: rgb(177, 75, 224);
+  color: blanchedalmond;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 130px;
+  height: 50px;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+}
+.icons{
+  padding-top: 50px;
+  margin-left: 20px;
+  grid-gap: 100px;
+
+}
+.arrow{
+  padding-top: 30px;
+  margin-left: 10px;
+}
+.close{
+  padding-top: 30px;
+  margin-left: 85%;
+}
+.womanIcon{
+display: flex;
+flex-direction: row-reverse;
+grid-gap: 65px;
+}
+
+.manIcon{
+  display: flex;
+  flex-direction: row-reverse;
+  grid-gap: 65px;
+}
+
+
+
+
