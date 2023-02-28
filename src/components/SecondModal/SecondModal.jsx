@@ -32,7 +32,7 @@ const SecondModal = () => {
         />{" "}
         мужской <br />
         <label for="checkbox2">
-          <img src="/Images/man.png" alt="" />
+          <img src="/Images/man1.png" alt="" />
         </label>
       </div>
       <button>Далее</button>
