@@ -1,15 +1,21 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import "./App.scss";
+import {BrowserRouter, Route, Routes } from "react-router-dom";
 import SecondModal from "./components/SecondModal/SecondModal";
+import HomePage from "./pages/HomePage";
+import "./App.scss";
+
 function App() {
   return (
     <div>
+     <BrowserRouter>
       <Routes>
-        <Route />
+        <Route path="/" element={<PublicRoute Component={HomePage} />} />
+        <Route path="/secondModal" element={<{SecondModal}/>} />
       </Routes>
-      <SecondModal />
-    </div>
+       </BrowserRouter> 
+     </div>
   );
 }
 export default App;
+
+
