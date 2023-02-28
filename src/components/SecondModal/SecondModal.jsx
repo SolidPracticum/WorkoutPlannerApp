@@ -19,7 +19,7 @@ const SecondModal = () => {
           onChange={() => handleChange("woman")}
         />{" "}
         женский <br />
-        <label for="checkbox1">
+        <label htmlFor="checkbox1">
           <img src="/Images/woman.png" alt="" />
         </label>
       </div>
@@ -31,7 +31,7 @@ const SecondModal = () => {
           onChange={() => handleChange("man")}
         />{" "}
         мужской <br />
-        <label for="checkbox2">
+        <label htmlFor="checkbox2">
           <img src="/Images/man1.png" alt="" />
         </label>
       </div>
