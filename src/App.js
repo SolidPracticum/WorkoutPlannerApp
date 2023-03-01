@@ -6,11 +6,6 @@ function App() {
   return (
     <div className="App">
       <HomePage />
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<PublicRoute Component={HomePage} />} />
-        </Routes>
-      </BrowserRouter> */}
     </div>
   );
 }
