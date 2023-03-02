@@ -41,7 +41,7 @@ function MainBlock() {
       </div>
       <div className={scss.Cards}>
         {data.map((item) => (
-          <Cards title={item.title} />
+          <Cards title={item.title} key={item.title} />
         ))}
       </div>
     </div>
