@@ -8,7 +8,7 @@ function InputModal(props) {
 	const [ageD, setAgeD] = useState('')
 	const [weightD, setWeightD] = useState('')
 	const [heightD, setHeightD] = useState('')
-	const data = useSelector((state) => state.slice.data)
+	// const data = useSelector((state) => state.slice.data)
 	const dispatch = useDispatch()
 
 	const addHandler = () => {
@@ -29,7 +29,6 @@ function InputModal(props) {
 		setWeightD('')
 		setHeightD('')
 	}
-	console.log(data)
 	return (
 		<div className='bg'>
 			<div className='inputMain'>

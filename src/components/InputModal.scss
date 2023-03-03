@@ -16,7 +16,6 @@
 	height: 592.49px;
 }
 .inputField {
-	// padding: 7px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -31,7 +30,6 @@
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-
 	color: #989898;
 }
 .inputField input {
@@ -44,10 +42,7 @@
 	border: 1px solid #727272;
 	text-align: center;
 }
-.inputfield:focus-within {
-	// cursor: pointer;
-	color: #ffff;
-}
+
 .inputField_firstBlock {
 	display: flex;
 	align-items: center;
@@ -110,8 +105,6 @@
 	font-weight: 500;
 	font-size: 40px;
 	line-height: 47px;
-	/* identical to box height */
-
 	text-align: center;
 }
 .inputMainText p {
