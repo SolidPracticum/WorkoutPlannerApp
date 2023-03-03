@@ -1,15 +1,32 @@
 import React, { useState } from "react";
 import styles from "./SecondModal.module.scss";
-const SecondModal = () => {
+import { useTranslation } from "react-i18next";
+export default function SecondModa() {
   const [woman] = useState(true);
   const [man] = useState(true);
   const handleChange = () => {};
+  const { t } = useTranslation();
   return (
     <div className={styles.secondModal}>
-      <img className={styles.arrow} src="/Images/left-arrow.png" alt="" />
-      <img className={styles.close} src="/Images/close.png" alt="" />
-      <h1>Ваш пол?</h1>
-      <p>Отвечая на наши вопросы Вы поможете нам составить Ваш персональный план тренировок</p>
+      <img className={styles.arrow} src="/Images/left-arrow.png" alt="backArrow" />
+      <img className={styles.close} src="/Images/close.png" alt="close" />
+      <h1>{t("reg.title")}</h1>
+      <p>{t("reg.text")}</p>
+
+      <div className={styles.manIcon}>
+        <input
+          type="checkbox"
+          id={styles.checkbox2}
+          value={man}
+          onChange={() => handleChange("man")}
+        />{" "}
+        <div className={styles.man}>
+          {t("reg.checkbox2")} <br />
+          <label htmlFor="checkbox2">
+            <img src="/Images/man1.png" alt="maleGender" />
+          </label>
+        </div>
+      </div>
       <div className={styles.womanIcon}>
         <input
           className={styles.first}
@@ -18,25 +35,14 @@ const SecondModal = () => {
           value={woman}
           onChange={() => handleChange("woman")}
         />{" "}
-        женский <br />
-        <label htmlFor="checkbox1">
-          <img src="/Images/woman.png" alt="" />
-        </label>
+        <div className={styles.woman}>
+          {t("reg.checkbox1")} <br />
+          <label htmlFor="checkbox1">
+            <img src="/Images/woman.png" alt="womanGender" />
+          </label>
+        </div>
       </div>
-      <div className={styles.manIcon}>
-        <input
-          type="checkbox"
-          id={styles.checkbox2}
-          value={man}
-          onChange={() => handleChange("man")}
-        />{" "}
-        мужской <br />
-        <label htmlFor="checkbox2">
-          <img src="/Images/man1.png" alt="" />
-        </label>
-      </div>
-      <button>Далее</button>
+      <button className={styles.next}>{t("reg.next")}</button>
     </div>
   );
-};
-export default SecondModal;
+}
