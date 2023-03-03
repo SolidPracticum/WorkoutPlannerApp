@@ -35,7 +35,7 @@ function InputModal(props) {
 			<div className='inputMain'>
 				<span className='back'>
 					<Link to='/thirdModal'>
-						<img src='/images/fourthModal/<.png' />
+						<img alt='back' src='/images/fourthModal/<.png' />
 					</Link>
 				</span>
 
@@ -44,13 +44,13 @@ function InputModal(props) {
 					<p>{props.t('p')}</p>
 				</div>
 				<span onClick={props.toggleCounter} className='close'>
-					<img src='/images/fourthModal/x.png' />
+					<img alt='close' src='/images/fourthModal/x.png' />
 				</span>
 			</div>
 
 			<div className='inputField'>
 				<div className='inputField_firstBlock'>
-					<img src='/images/fourthModal/v.png' />
+					<img alt='age' src='/images/fourthModal/v.png' />
 					<span>{props.t('age')}</span>
 				</div>
 
@@ -58,7 +58,7 @@ function InputModal(props) {
 					<input
 						value={ageD}
 						onChange={(event) => setAgeD(event.target.value)}
-						min='10'
+						min='1'
 						max='100'
 						type='number'
 					/>
@@ -66,7 +66,7 @@ function InputModal(props) {
 			</div>
 			<div className='inputField'>
 				<div className='inputField_firstBlock'>
-					<img src='/images/fourthModal/v.png' />
+					<img alt='weight' src='/images/fourthModal/v.png' />
 					<span>{props.t('weight')}</span>
 				</div>
 
@@ -75,17 +75,21 @@ function InputModal(props) {
 						value={weightD}
 						onChange={(event) => setWeightD(event.target.value)}
 						type='number'
+						min='1'
+						max='100'
 					/>
 				</div>
 			</div>
 			<div className='inputField'>
 				<div className='inputField_firstBlock'>
-					<img src='/images/fourthModal/rost.png' />
+					<img alt='height' src='/images/fourthModal/rost.png' />
 					<span> {props.t('height')}</span>
 				</div>
 
 				<div>
 					<input
+						min='1'
+						max='100'
 						type='number'
 						value={heightD}
 						onChange={(event) => setHeightD(event.target.value)}
