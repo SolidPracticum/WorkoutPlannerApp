@@ -1,5 +1,4 @@
 {
-  "header":{
-    "title": "Header"
-  }
+    "reg": "Registration",
+    "register": "reg"
 }
