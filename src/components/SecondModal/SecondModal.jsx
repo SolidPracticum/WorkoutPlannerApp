@@ -1,25 +1,34 @@
 import React, { useState } from "react";
 import styles from "./SecondModal.module.scss";
 import { useTranslation } from "react-i18next";
+import { useDispatch } from "react-redux";
+import { genderDate } from "../../redux/Slice";
 export default function SecondModa() {
-  const [woman] = useState(true);
-  const [man] = useState(true);
-  const handleChange = () => {};
+  const [woman, setWoman] = useState(false);
+  const [man, setMan] = useState(false);
   const { t } = useTranslation();
+  const dispatch = useDispatch();
+  const addData = () => {
+    if (man == true && woman == true) {
+      alert(t("reg.alert"));
+    } else {
+      dispatch(
+        genderDate({
+          woman: woman,
+          man: man
+        })
+      );
+    }
+  };
   return (
     <div className={styles.secondModal}>
-      <img className={styles.arrow} src="Images/SEcondModalIcons/left-arrow.png" alt="backArrow" />
+      <img className={styles.arrow} src="Images/SecondModalIcons/left-arrow.png" alt="backArrow" />
       <img className={styles.close} src="Images/SecondModalIcons/close.png" alt="close" />
       <h1>{t("reg.title")}</h1>
       <p>{t("reg.text")}</p>
 
       <div className={styles.manIcon}>
-        <input
-          type="checkbox"
-          id={styles.checkbox2}
-          value={man}
-          onChange={() => handleChange("man")}
-        />{" "}
+        <input type="checkbox" id={styles.checkbox2} value={man} onChange={() => setMan(!man)} />{" "}
         <div className={styles.man}>
           {t("reg.checkbox2")} <br />
           <label htmlFor="checkbox2">
@@ -33,7 +42,7 @@ export default function SecondModa() {
           type="checkbox"
           id={styles.checkbox1}
           value={woman}
-          onChange={() => handleChange("woman")}
+          onChange={() => setWoman(!woman)}
         />{" "}
         <div className={styles.woman}>
           {t("reg.checkbox1")} <br />
@@ -42,7 +51,9 @@ export default function SecondModa() {
           </label>
         </div>
       </div>
-      <button className={styles.next}>{t("reg.next")}</button>
+      <button onClick={addData} className={styles.next}>
+        {t("reg.next")}
+      </button>
     </div>
   );
 }

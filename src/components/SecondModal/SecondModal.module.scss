@@ -68,7 +68,7 @@ input {
 .woman {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 68%;
+  margin-right: 65%;
   grid-gap: 5px;
 }
 .manIcon {
@@ -80,11 +80,10 @@ input {
   display: flex;
   flex-direction: row-reverse;
   grid-gap: 7px;
-  margin-right: 40%;
+  margin-right: 37%;
 }
-#checbox2 {
-  margin-left: 5px;
-}
+
 input {
   background-color: black;
+  margin-right: 10px;
 }
