@@ -1,5 +1,16 @@
 {
-  "header":{
-    "title": "Header"
+    "header":{
+      "title": "Заголовок",
+      "btn": "Can"
+    },
+    "reg":{
+     "register": "register",
+      "title": "Your gender?",
+      "text": "By answering the questions, you will help us create your personal training plan",
+      "checkbox1": "female",
+      "checkbox2": "male",
+      "next": "next",
+      "alert": "choose one"
+    }
+   
   }
-}

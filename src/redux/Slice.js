@@ -3,10 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const Slice = createSlice({
   name: "SliceTest",
   initialState: {
-    data: []
+    data: [],
+    gender: []
   },
-  reducers: {}
+  reducers: {
+    genderDate(state, action) {
+      state.gender.push(action.payload);
+    }
+  }
 });
 
-export const SliceTestActions = Slice.actions;
+export const { genderDate } = Slice.actions;
 export const SliceTestReducer = Slice.reducer;
