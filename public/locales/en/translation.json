@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"text": "en",
 	"h1": "What are your parameters?",
 	"p": "By answering the questions you will help us create your personal training plan",
@@ -17,3 +18,23 @@
 }
 
 
+=======
+    "Reg": "Registration",
+    "register": "reg",
+
+    "header":{
+      "title": "Заголовок",
+      "btn": "Can"
+    },
+    "reg":{
+     "register": "register",
+      "title": "Your gender?",
+      "text": "By answering the questions, you will help us create your personal training plan",
+      "checkbox1": "female",
+      "checkbox2": "male",
+      "next": "next",
+      "alert": "choose one"
+    }
+   
+  }
+>>>>>>> 8d7356e53a762cd89b194294d512d6d6a66f1571
