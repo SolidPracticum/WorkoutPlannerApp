@@ -11,6 +11,15 @@
       "checkbox2": "male",
       "next": "next",
       "alert": "choose one"
+    },
+    "goal":{
+      "title": "Your goals?",
+      "text": "By answering the questions, you will help us create your personal training plan",
+      "first": "correct weight",
+      "second": "stay fit",
+      "third": "gain muscles",
+      "next": "next",
+      "alert": "choose one"
     }
    
   }

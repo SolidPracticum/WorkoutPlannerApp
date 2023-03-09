@@ -3,7 +3,7 @@ import styles from "./SecondModal.module.scss";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { genderDate } from "../../redux/Slice";
-export default function SecondModa() {
+export default function SecondModal() {
   const [woman, setWoman] = useState(false);
   const [man, setMan] = useState(false);
   const { t } = useTranslation();
