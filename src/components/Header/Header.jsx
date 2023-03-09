@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import scss from "./Header.module.scss";
 import "./../../i18n";
 import { useState } from "react";
-import question from "..//..//headerImg//Vector.png";
-import language from "..//..//headerImg//language.png";
+import question from "..//../headerImg/Vector.png";
+import language from "..//../headerImg/language.png";
 export default function Header() {
   const [isLanguage, setLanguage] = useState(false);
   const { t, i18n } = useTranslation();
