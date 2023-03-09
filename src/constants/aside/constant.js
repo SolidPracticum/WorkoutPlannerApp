@@ -1,37 +1,37 @@
 export const data = [
   {
     id: 1,
-    title: "Главная",
+    title: "aside.main",
     img: "/Images/aside/main.svg"
   },
   {
     id: 2,
-    title: "Цели",
+    title: "aside.goals",
     img: "/Images/aside/goals.svg"
   },
   {
     id: 3,
-    title: "Параметры",
+    title: "aside.options",
     img: "/Images/aside/options.svg"
   },
   {
     id: 4,
-    title: "Тренировки",
+    title: "aside.workout",
     img: "/Images/aside/workout.svg"
   },
   {
     id: 5,
-    title: "Подсчет калорий",
+    title: "aside.calorie",
     img: "/Images/aside/calorie.svg"
   },
   {
     id: 6,
-    title: "Персональный план",
+    title: "aside.personalPlan",
     img: "/Images/aside/plan.svg"
   },
   {
     id: 7,
-    title: "Настройки",
+    title: "aside.settings",
     img: "/Images/aside/Settings.svg"
   }
 ];

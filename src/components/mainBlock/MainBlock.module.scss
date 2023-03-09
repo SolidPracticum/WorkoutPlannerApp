@@ -13,7 +13,6 @@
     grid-template-columns: 286px 1054px;
     grid-template-rows: 450.5px 160px;
     gap: 21px;
-    z-index: 10;
     grid-template-areas: 
         'aside main'
         'aside cards'
@@ -22,11 +21,11 @@
         grid-area: aside;
     }
     .Cards{
+        height: 230px;
         display: flex;
+        align-items: flex-start;
         gap: 20px;
         grid-area: cards;
-        margin-bottom: 70px;
-        z-index: 5;
     }
     .main{
         grid-area: main;

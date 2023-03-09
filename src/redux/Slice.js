@@ -3,10 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const Slice = createSlice({
   name: "SliceTest",
   initialState: {
-    data: []
+    data: [],
+    authData: []
   },
-  reducers: {}
+  reducers: {
+    authData(state, action) {
+      state.authData.push(action.payload);
+    }
+  }
 });
 
-export const SliceTestActions = Slice.actions;
+export const { authData } = Slice.actions;
 export const SliceTestReducer = Slice.reducer;

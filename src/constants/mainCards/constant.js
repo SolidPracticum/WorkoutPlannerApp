@@ -1,14 +1,14 @@
 export const data = [
   {
-    title: "Индивидуальный план тренеровок"
+    title: "mainCards.title1"
   },
   {
-    title: "585 упражнений для здорового и красивого тела"
+    title: "mainCards.title2"
   },
   {
-    title: "Подсчет калорий"
+    title: "mainCards.title3"
   },
   {
-    title: "Статистика и мотивация"
+    title: "mainCards.title4"
   }
 ];
