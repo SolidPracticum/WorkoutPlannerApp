@@ -26,7 +26,7 @@ export default function Header() {
         <div className={scss.imgs}>
           <img src={question} className={scss.notifs} alt="question" />
           <img src={language} className={scss.notifs} alt="language" onClick={isChangeLanguage} />
-          <button className={scss.btn}>{t("reg")}</button>
+          <button className={scss.btn}>{t("Reg")}</button>
           <div className={!open ? scss.SelectTranslation : scss.acive}></div>
         </div>
       </div>
