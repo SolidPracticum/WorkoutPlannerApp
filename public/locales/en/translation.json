@@ -5,5 +5,15 @@
 	"age": "age",
 	"weight": "weight",
 	"height": "height",
-	"next": "Next"
+	"next": "Next",
+	
+	"register":{
+		"title": "Registration for Workout Planner",
+		"email_phone": "Enter your email or phone number",
+		"password": "Create a password",
+		"consent": "I give my consent to the processing of personal data",
+		"more_btn": "More"
+	  }
 }
+
+

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './InputModal.scss'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addData } from '../redux/Slice'
 import { Link } from 'react-router-dom'
 import { t } from 'i18next'
