@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Header from "../Header/Header";
 import Aside from "../aside/Aside";
 import Cards from "../mainCards/Cards";
 import scss from "./MainBlock.module.scss";
@@ -25,6 +26,9 @@ function MainBlock() {
 
   return (
     <div className={scss.mainBlock}>
+      <div className={scss.Header}>
+        <Header />
+      </div>
       <div className={scss.Aside}>
         <Aside t={t} />
       </div>
@@ -32,7 +36,7 @@ function MainBlock() {
         <img src="/images/mainBlock/mainPhoto.svg" alt="mainBlock" />
         <form>
           <div className={scss.authWindow}>
-            <p>{t("mainBlock.title")}</p>
+            <span>{t("mainBlock.title")}</span>
             <input
               type="email"
               placeholder={t("mainBlock.email")}

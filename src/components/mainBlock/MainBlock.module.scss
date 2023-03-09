@@ -6,31 +6,35 @@
 .mainBlock{
     background-color: #000;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 286px 1054px;
-    grid-template-rows: 450.5px 160px;
-    gap: 21px;
-    grid-template-areas: 
+    gap: 21px; 
+    grid-template-areas:
+        'head head'
         'aside main'
         'aside cards'
     ;
+    padding-bottom: 55px;
+    .Header{
+        grid-area: head;
+    }
     .Aside{
         grid-area: aside;
     }
     .Cards{
-        height: 230px;
         display: flex;
         align-items: flex-start;
         gap: 20px;
         grid-area: cards;
+        margin-bottom: 10px;
     }
     .main{
+        margin-top: 10px;
         grid-area: main;
         width: 1054px;
-        height: 381px;
+        height: 381px; //381px
         border-radius: 16px;
         display: flex;
         align-items: center;
@@ -40,7 +44,7 @@
         }
         form{
             position: relative;
-            width: 357px;
+            width: 357px; //357px
             height: 308px;
             background: rgba(44, 46, 52, 0.7);
             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -64,7 +68,7 @@
                     padding: 15px 62px;
                     cursor: pointer;
                 }
-                p{
+                span{
                     font-family: 'Roboto';
                     font-style: normal;
                     font-weight: 700;
