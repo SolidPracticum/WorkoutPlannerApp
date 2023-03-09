@@ -1,34 +1,29 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const Slice = createSlice({
-	name: 'SliceTest',
-	initialState: {
-		data: [],
-		modal: true,
-	},
-	reducers: {
-		toggle(state) {
-			state.modal = !state.modal
-		},
-		addData(state, action) {
-			state.data.push(action.payload)
-		},
-	},
-})
-
-export const { addData, toggle } = Slice.actions
-export const SliceTestReducer = Slice.reducer
   name: "SliceTest",
   initialState: {
     data: [],
-    gender: []
+    modal: true,
+    registerData: []
   },
   reducers: {
-    genderDate(state, action) {
-      state.gender.push(action.payload);
+    toggle(state) {
+      state.modal = !state.modal;
+    },
+    addData(state, action) {
+      state.data.push(action.payload);
+    },
+    registerData(state, action) {
+      state.registerData.push(action.payload);
     }
   }
+  // reducers: {
+  //   registerData(state, action){
+  //     state.registerData.push(action.payload);
+  //   }
+  // }
 });
 
-export const { genderDate } = Slice.actions;
+export const { authData, genderDate, toggle, registerData } = Slice.actions;
 export const SliceTestReducer = Slice.reducer;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 import './InputModal.scss'
 import { useDispatch } from 'react-redux'
 import { addData } from '../redux/Slice'

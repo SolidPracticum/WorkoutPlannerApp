@@ -1,21 +1,21 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import FourthModal from './components/FourthModal'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+// import FourthModal from "./components/FourthModal";
 import HomePage from "./pages/HomePage";
 import SecondModal from "./components/SecondModal/SecondModal";
-import './App.scss'
-import RegisterPage from './components/RegisterPage/RegisterPage'
+import "./App.scss";
+import RegisterPage from "./components/RegisterPage/RegisterPage";
 function App() {
-	return (
-		<div className='App'>
-			<Routes>
+  return (
+    <div className="App">
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/SecondModal" element={<SecondModal />} />
-				<Route path='/fourth' element={<FourthModal />} />
-				<Route path='/register' element={<RegisterPage />} />
-			</Routes>
-		</div>
-	)
+        {/* <Route path="/fourth" element={<FourthModal />} /> */}
+        <Route path="/register" element={<RegisterPage />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;

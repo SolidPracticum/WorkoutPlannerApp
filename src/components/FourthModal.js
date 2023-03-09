@@ -1,9 +1,9 @@
-import React from 'react'
-import InputModal from './InputModal'
-import { toggle } from '../redux/Slice'
-import { useDispatch, useSelector } from 'react-redux'
-import './FourthModal.scss'
-import { useTranslation } from 'react-i18next'
+import React from "react";
+import InputModal from "./InputModal";
+import { toggle } from "../redux/Slice";
+import { useDispatch, useSelector } from "react-redux";
+import "/FourthModal.scss";
+import { useTranslation } from "react-i18next";
 // import i18n from '../18n'
 
 function FourthModal() {
