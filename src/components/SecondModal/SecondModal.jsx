@@ -30,9 +30,9 @@ export default function SecondModa() {
       <div className={styles.manIcon}>
         <input type="checkbox" id={styles.checkbox2} value={man} onChange={() => setMan(!man)} />{" "}
         <div className={styles.man}>
-          {t("reg.checkbox2")} <br />
+          <span className={styles.male}>{t("reg.checkbox2")}</span> <br />
           <label htmlFor="checkbox2">
-            <img src="Images/SecondModalIcons/man1.png" alt="maleGender" />
+            <img src="Images/SecondModalIcons/male-gender.png" alt="maleGender" />
           </label>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function SecondModa() {
           onChange={() => setWoman(!woman)}
         />{" "}
         <div className={styles.woman}>
-          {t("reg.checkbox1")} <br />
+          <span className={styles.female}>{t("reg.checkbox1")}</span> <br />
           <label htmlFor="checkbox1">
             <img src="Images/SecondModalIcons/woman.png" alt="womanGender" />
           </label>
