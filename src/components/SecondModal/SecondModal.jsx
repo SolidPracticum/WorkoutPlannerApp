@@ -28,7 +28,7 @@ export default function SecondModa() {
       <p>{t("reg.text")}</p>
 
       <div className={styles.manIcon}>
-        <input type="checkbox" id={styles.checkbox2} value={man} onChange={() => setMan(!man)} />{" "}
+        <input type="checkbox" id={styles.checkbox2} value={man} onChange={() => setMan(!man)} />
         <div className={styles.man}>
           {t("reg.checkbox2")} <br />
           <label htmlFor="checkbox2">
