@@ -4,14 +4,20 @@ const Slice = createSlice({
   name: "SliceTest",
   initialState: {
     data: [],
+    authData: [],
     gender: []
   },
   reducers: {
-    genderDate(state, action) {
-      state.gender.push(action.payload);
+    authData(state, action) {
+      state.authData.push(action.payload);
+    },
+    reducers: {
+      genderDate(state, action) {
+        state.gender.push(action.payload);
+      }
     }
   }
 });
 
-export const { genderDate } = Slice.actions;
+export const { authData, genderDate } = Slice.actions;
 export const SliceTestReducer = Slice.reducer;
