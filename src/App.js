@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import SecondModal from "./components/SecondModal/SecondModal";
 function App() {
   return (
-    <div>
+    <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/SecondModal" element={<SecondModal />} />
