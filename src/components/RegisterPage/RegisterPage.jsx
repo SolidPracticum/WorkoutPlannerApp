@@ -31,13 +31,13 @@ export default function RegisterPage() {
               alt="cross_icon"
             />
           </Link>
-          <h1>{t("register.title")}</h1>
+          <h1>{t("register_page.title")}</h1>
           <label className={scss.label}>
-            {t("register.email_phone")}
+            {t("register_page.email_phone")}
             <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </label>
           <label className={scss.label}>
-            {t("register.password")}
+            {t("register_page.password")}
             <input
               type="password"
               value={password}
@@ -46,10 +46,10 @@ export default function RegisterPage() {
             />
           </label>
           <label className={scss.checkbox}>
-            <input type="checkbox" /> {t("register.consent")}
+            <input type="checkbox" /> {t("register_page.consent")}
           </label>
           <div>
-            <button onClick={addHandler}>{t("register.more_btn")}</button>
+            <button onClick={addHandler}>{t("register_page.more_btn")}</button>
           </div>
         </div>
       </form>

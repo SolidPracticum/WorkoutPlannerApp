@@ -1,6 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	"text": "en",
 	"h1": "What are your parameters?",
 	"p": "By answering the questions you will help us create your personal training plan",
@@ -9,69 +7,54 @@
 	"height": "height",
 	"next": "Next",
 	
-	"register":{
+	"register_page":{
 		"title": "Registration for Workout Planner",
 		"email_phone": "Enter your email or phone number",
 		"password": "Create a password",
 		"consent": "I give my consent to the processing of personal data",
 		"more_btn": "More"
-	  }
-}
+	  },
 
-
-=======
     "Reg": "Registration",
     "register": "reg",
 
     "header":{
       "title": "Заголовок",
-      "btn": "Can"
+      "btn": "Can",
+      "register_btn": "Registration"
     },
     "reg":{
-     "register": "register",
-      "title": "Your gender?",
-      "text": "By answering the questions, you will help us create your personal training plan",
-      "checkbox1": "female",
-      "checkbox2": "male",
-      "next": "next",
-      "alert": "choose one"
-    }
-   
-  }
->>>>>>> 8d7356e53a762cd89b194294d512d6d6a66f1571
-=======
-  "header":{
-    "btn": "Registration"
-  },
-  "aside":{
-    "main": "Main",
-    "goals": "Goals",
-    "options": "Options",
-    "workout": "Workout",
-    "calorie": "Calorie counting",
-    "personalPlan": "Personal plan",
-    "settings": "Settings"
-  },
-  "mainBlock": {
-    "title": "Authorization",
-    "email": "Email",
-    "password": "Password",
-    "button": "Sign In"
-  },
-  "mainCards": {
-    "title1": "Individual training plan",
-    "title2": "585 exercises for healthy and beautiful body",
-    "title3": "Calorie counting",
-    "title4": "Statistics and motivation"
-  },
-  "reg":{
-    "register": "register",
-    "title": "Your gender?",
-    "text": "By answering the questions, you will help us create your personal training plan",
-    "checkbox1": "female",
-    "checkbox2": "male",
-    "next": "next",
-    "alert": "choose one"
-  }
+      "register": "register",
+       "title": "Your gender?",
+       "text": "By answering the questions, you will help us create your personal training plan",
+       "checkbox1": "female",
+       "checkbox2": "male",
+       "next": "next",
+       "alert": "choose one"
+     },
+   "aside":{
+     "main": "Main",
+     "goals": "Goals",
+     "options": "Options",
+     "workout": "Workout",
+     "calorie": "Calorie counting",
+     "personalPlan": "Personal plan",
+     "settings": "Settings"
+   },
+   "mainBlock": {
+     "title": "Authorization",
+     "email": "Email",
+     "password": "Password",
+     "button": "Sign In"
+   },
+   "mainCards": {
+     "title1": "Individual training plan",
+     "title2": "585 exercises for healthy and beautiful body",
+     "title3": "Calorie counting",
+     "title4": "Statistics and motivation"
+   }
 }
->>>>>>> dda2f64f27f01b508a8dec86a8b4c1519230658f
+
+    
+    
+
