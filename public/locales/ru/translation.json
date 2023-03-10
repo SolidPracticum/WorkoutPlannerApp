@@ -1,8 +1,7 @@
 {
-    "Reg": "Регистрация",
-    "register": "рег",
 
     "header":{
+      "register": "Регистрация",
       "title": "Header",
       "btn": "Can"
     },
