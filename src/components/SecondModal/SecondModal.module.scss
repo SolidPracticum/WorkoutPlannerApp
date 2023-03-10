@@ -41,7 +41,8 @@ p {
   margin-top: 12px;
 }
 input {
-  color: #222429;
+  margin-right: 10px;
+ background-color: #222429;
 }
 .next {
   background-color: #7f5af0;
@@ -78,11 +79,6 @@ input {
 .man {
   display: flex;
   flex-direction: row-reverse;
-}
-
-input {
-  background-color: black;
-  margin-right: 10px;
 }
 .female{
   width: 65%;
