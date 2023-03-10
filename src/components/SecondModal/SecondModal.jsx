@@ -3,6 +3,7 @@ import styles from "./SecondModal.module.scss";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { genderDate } from "../../redux/Slice";
+import { Link } from "react-router-dom";
 export default function SecondModa() {
   const [woman, setWoman] = useState(false);
   const [man, setMan] = useState(false);
@@ -22,8 +23,16 @@ export default function SecondModa() {
   };
   return (
     <div className={styles.secondModal}>
-      <img className={styles.arrow} src="Images/SecondModalIcons/left-arrow.png" alt="backArrow" />
-      <img className={styles.close} src="Images/SecondModalIcons/close.png" alt="close" />
+      <Link to="/RegisterPage">
+        <img
+          className={styles.arrow}
+          src="Images/SecondModalIcons/left-arrow.png"
+          alt="backArrow"
+        />
+      </Link>
+      <Link to="/">
+        <img className={styles.close} src="Images/SecondModalIcons/close.png" alt="close" />
+      </Link>
       <h1>{t("reg.title")}</h1>
       <p>{t("reg.text")}</p>
 
@@ -47,7 +56,9 @@ export default function SecondModa() {
         <div className={styles.woman}>
           <span className={styles.female}>{t("reg.checkbox1")}</span> <br />
           <label htmlFor="checkbox1">
-            <img src="Images/SecondModalIcons/woman.png" alt="womanGender" />
+            <div className={styles.img}>
+              <img src="Images/SecondModalIcons/woman.png" alt="womanGender" />
+            </div>
           </label>
         </div>
       </div>

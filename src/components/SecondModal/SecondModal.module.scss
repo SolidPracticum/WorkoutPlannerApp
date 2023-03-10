@@ -64,7 +64,7 @@ input {
 .womanIcon {
   display: flex;
   flex-direction: row-reverse;
-  grid-gap:65%;
+  grid-gap:68%;
 }
 .woman {
   display: flex;
@@ -73,7 +73,7 @@ input {
 .manIcon {
   display: flex;
   flex-direction: row-reverse;
-  grid-gap: 65%;
+  grid-gap: 66%;
 }
 .man {
   display: flex;
@@ -87,11 +87,12 @@ input {
 .female{
   width: 65%;
   display: flex;
-  align-items: center;
 }
 .male{
   width: 60%;
   display: flex;
   align-items: center;
 }
-
+span{
+  font-size: 13px;
+}
