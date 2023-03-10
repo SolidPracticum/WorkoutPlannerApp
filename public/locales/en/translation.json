@@ -1,19 +1,35 @@
 {
-    "Reg": "Registration",
-    "register": "reg",
-
-    "header":{
-      "title": "Заголовок",
-      "btn": "Can"
-    },
-    "reg":{
-     "register": "register",
-      "title": "Your gender?",
-      "text": "By answering the questions, you will help us create your personal training plan",
-      "checkbox1": "female",
-      "checkbox2": "male",
-      "next": "next",
-      "alert": "choose one"
-    }
-   
+  "header":{
+    "btn": "Registration"
+  },
+  "aside":{
+    "main": "Main",
+    "goals": "Goals",
+    "options": "Options",
+    "workout": "Workout",
+    "calorie": "Calorie counting",
+    "personalPlan": "Personal plan",
+    "settings": "Settings"
+  },
+  "mainBlock": {
+    "title": "Authorization",
+    "email": "Email",
+    "password": "Password",
+    "button": "Sign In"
+  },
+  "mainCards": {
+    "title1": "Individual training plan",
+    "title2": "585 exercises for healthy and beautiful body",
+    "title3": "Calorie counting",
+    "title4": "Statistics and motivation"
+  },
+  "reg":{
+    "register": "register",
+    "title": "Your gender?",
+    "text": "By answering the questions, you will help us create your personal training plan",
+    "checkbox1": "female",
+    "checkbox2": "male",
+    "next": "next",
+    "alert": "choose one"
   }
+}
