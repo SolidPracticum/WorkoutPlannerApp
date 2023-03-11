@@ -5,7 +5,8 @@ const Slice = createSlice({
   initialState: {
     data: [],
     authData: [],
-    gender: []
+    gender: [],
+    registerData: []
   },
   reducers: {
     authData(state, action) {

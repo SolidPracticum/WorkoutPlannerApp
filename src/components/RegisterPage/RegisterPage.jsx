@@ -34,16 +34,17 @@ export default function RegisterPage() {
           <h1>{t("register_page.title")}</h1>
           <label className={scss.label}>
             {t("register_page.email_phone")}
-            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input type="text" onChange={(e) => setEmail(e.target.value)} required />
           </label>
           <label className={scss.label}>
             {t("register_page.password")}
-            <input
+            {/* <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-            />
+            /> */}
+            <input type="password" onChange={(e) => setPassword(e.target.value)} required />
           </label>
           <label className={scss.checkbox}>
             <input type="checkbox" /> {t("register_page.consent")}
