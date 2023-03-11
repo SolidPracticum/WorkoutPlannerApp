@@ -1,0 +1,95 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  .container {
+    height: 590px;
+    background-color: #2c2e34;
+    border-radius: 20px;
+    .main {
+      box-sizing: border-box;
+      width: 695px;
+      height: 500px;
+      background-color: #2c2e34;
+      color: white;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .close_img {
+        img {
+          width: 50px;
+          position: relative;
+          right: -290px;
+        }
+      }
+      h1 {
+        box-sizing: border-box;
+        font-weight: 500;
+        font-size: 40px;
+        font-family: "Roboto";
+        font-style: normal;
+        line-height: 47px;
+        white-space: pre-line;
+        margin-bottom: 30px;
+      }
+      .label {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        input {
+          box-sizing: border-box;
+          width: 350px;
+          height: 45px;
+          border-radius: 8px;
+          background-color: #222429;
+          border: 1px solid #989898;
+          outline: none;
+          color: white;
+          padding: 0 0 0 8%;
+        }
+      }
+      .checkbox {
+        margin: 0 0 10px 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 10px 4px 0;
+        font-size: 12px;
+        width: 51%;
+        align-items: center;
+      }
+      button {
+        border: none;
+        background-color: #7f5af0;
+        border-radius: 7px;
+        width: 350px;
+        height: 47px;
+        color: white;
+      }
+    }
+  }
+}
+
+.checkboxInput {
+  width: 20px;
+  height: 20px;
+  background-color: #222429;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-image: url(../../../public/images/registerPage/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.checkboxInputNonActive {
+  width: 20px;
+  height: 20px;
+  background-color: #222429;
+  border-radius: 3px;
+  border: 1px solid #989898;
+}
