@@ -40,6 +40,13 @@
      "third": "the outstanding muscles",
      "next": "next",
      "alert": "choose one"
-   }
+   },
   
+  "register_page":{
+    "title": "Registration for \n Workout Planner",
+    "email_phone": "Enter your email or phone number",
+    "password": "Create a password",
+    "consent": "I give my consent to the processing of personal data",
+    "more_btn": "More"
+  } 
 }
