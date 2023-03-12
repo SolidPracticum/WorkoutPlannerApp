@@ -5,11 +5,16 @@ const Slice = createSlice({
   initialState: {
     data: [],
     authData: [],
-    gender: []
+    gender: [],
+    register: []
   },
   reducers: {
     authData(state, action) {
       state.authData.push(action.payload);
+    },
+    registerData(state, action) {
+      state.register.push(action.payload);
+      console.log(state.register[0]);
     },
     reducers: {
       genderDate(state, action) {
@@ -19,5 +24,5 @@ const Slice = createSlice({
   }
 });
 
-export const { authData, genderDate } = Slice.actions;
+export const { authData, genderDate, registerData } = Slice.actions;
 export const SliceTestReducer = Slice.reducer;
