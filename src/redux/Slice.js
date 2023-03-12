@@ -4,24 +4,22 @@ const Slice = createSlice({
   name: "SliceTest",
   initialState: {
     data: [],
-    gender: []
-  },
-  name2: "SliceTest2",
-  defaultState: {
-    data: [],
+    authData: [],
+    gender: [],
     option: []
   },
   reducers: {
-    genderDate(state, action) {
+    genderData(state, action) {
       state.gender.push(action.payload);
     },
-    optionDate(state, action) {
+    optionData(state, action) {
       state.option.push(action.payload);
+    },
+    authData(state, action) {
+      state.authData.push(action.payload);
     }
   }
 });
 
-export const { genderDate } = Slice.actions;
+export const { authData, genderData, optionData } = Slice.actions;
 export const SliceTestReducer = Slice.reducer;
-export const { optionDate } = Slice.actions;
-export const SliceTest2Reducer = Slice.reducer;

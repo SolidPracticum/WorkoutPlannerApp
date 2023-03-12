@@ -69,26 +69,39 @@ input {
   display: flex;
   flex-direction: row-reverse;
 }
+.correctWeight{
+grid-gap: 44%;
+}
+.beFit{
+  grid-gap: 45%;
+}
+.muscles{
+  grid-gap: 39%;
+}
 .weightIcon,
 .fitIcon,
  .musclesIcon {
   display: flex;
   flex-direction: row-reverse;
-  grid-gap: 5px;
+  grid-gap: 2%;
 }
-.text{
+.text1{
+font-family: Roboto;
+font-style: medium;
+line-height: 12px;
+font-size: 14px;
+}
+.text2{
 font-family: Roboto;
 font-style: medium;
 line-height: 16px;
 font-size: 14px;
 }
-.weightIcon{
-margin-right: 120px;
+.text3{
+  font-family: Roboto;
+  font-style: medium;
+  line-height: 16px;
+  font-size: 14px;
 }
-.fitIcon{
-  margin-right: 120px;
-}
-.musclesIcon{
-  margin-right: 110px;
-}
+
 
