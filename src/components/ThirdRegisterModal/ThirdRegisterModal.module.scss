@@ -1,63 +1,63 @@
+.ThirdRegisterModal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .wrapper {
-    border-radius: 14px;
-    background-color: #2c2e34;
-    margin-left: 200px;
-    width: 695px;
-    height: 592px;
-  }
-  .arrow {
-    padding-top: 53px;
-    margin-left: 38px;
-  }
-  .close {
-    padding-top: 53px;
-    margin-left: 580px;
-  }
-  h1,
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  background-color: #2c2e34;
+  width: 695px;
+  height: 592px;
+  grid-gap: 20px;
+}
+.img {
+  display: flex;
+  grid-gap: 80vh;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5vh;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+.mainText {
   p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #ffffff;
+    width: 80vh;
   }
-  h1 {
-    font-family: Roboto;
-    font: 500;
-    height: 47px;
-    top: 85px;
-    text-align: center;
-  }
-  p {
-    width: 313px;
-    line-height: 16px;
-    margin-left: 191px;
-  }
+}
 .correctWeight,
 .beFit,
 .muscles {
   border: 1px solid #989898;
   background-color: #222429;
-  margin-top: 30px;
   color: #989898;
   display: flex;
   align-items: center;
-  margin-left: 191px;
   height: 45px;
   width: 313px;
   border-radius: 5px;
 }
-.beFit {
-  margin-top: 12px;
-}
-.muscles {
-  margin-top: 12px;
-}
+
 input {
   color: #222429;
 }
 .next {
   background-color: #7f5af0;
-  margin-top: 24px;
-  margin-bottom: 20px;
-  margin-left: 191px;
+  margin-bottom: 10vh;
   height: 45px;
   width: 313px;
   border: none;
@@ -69,39 +69,37 @@ input {
   display: flex;
   flex-direction: row-reverse;
 }
-.correctWeight{
-grid-gap: 44%;
+.correctWeight {
+  grid-gap: 44%;
 }
-.beFit{
+.beFit {
   grid-gap: 45%;
 }
-.muscles{
+.muscles {
   grid-gap: 39%;
 }
 .weightIcon,
 .fitIcon,
- .musclesIcon {
+.musclesIcon {
   display: flex;
   flex-direction: row-reverse;
   grid-gap: 2%;
 }
-.text1{
-font-family: Roboto;
-font-style: medium;
-line-height: 12px;
-font-size: 14px;
+.text1 {
+  font-family: Roboto;
+  font-style: medium;
+  line-height: 12px;
+  font-size: 14px;
 }
-.text2{
-font-family: Roboto;
-font-style: medium;
-line-height: 16px;
-font-size: 14px;
-}
-.text3{
+.text2 {
   font-family: Roboto;
   font-style: medium;
   line-height: 16px;
   font-size: 14px;
 }
-
-
+.text3 {
+  font-family: Roboto;
+  font-style: medium;
+  line-height: 16px;
+  font-size: 14px;
+}
