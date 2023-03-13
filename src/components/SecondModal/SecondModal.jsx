@@ -10,7 +10,7 @@ export default function SecondModal() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const addData = () => {
-    if ((man == true && woman == true) || (man == false && woman == false)) {
+    if ((man == true && woman == true) || (woman == false && man == false)) {
       alert(t("reg.alert"));
     } else {
       dispatch(
@@ -67,9 +67,11 @@ export default function SecondModal() {
             </label>
           </div>
         </div>
-        <button onClick={addData} className={styles.next}>
-          {t("reg.next")}
-        </button>
+        <Link to="/ThirdRegisterModal">
+          <button onClick={addData} className={styles.next}>
+            {t("reg.next")}
+          </button>
+        </Link>
       </div>
     </div>
   );
