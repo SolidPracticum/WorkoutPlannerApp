@@ -1,20 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const Slice = createSlice({
-	name: 'SliceTest',
-	initialState: {
-		data: [],
-		modal: true,
-	},
-	reducers: {
-		toggle(state) {
-			state.modal = !state.modal
-		},
-		addData(state, action) {
-			state.data.push(action.payload)
-		},
-	},
+    name: 'SliceTest',
+    initialState: {
+        data: []
+    },
+    reducers: {
+
+    }
 })
 
-export const { addData, toggle } = Slice.actions
-export const SliceTestReducer = Slice.reducer
+export const SliceTestActions = Slice.actions;
+export const SliceTestReducer = Slice.reducer;
