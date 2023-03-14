@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./SecondModal.module.scss";
+import scss from "./SecondModal.module.scss";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { genderData } from "../../redux/Slice";
@@ -24,13 +24,13 @@ export default function SecondModal() {
     }
   };
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.secondModal}>
-        <div className={styles.img}>
+    <div className={scss.wrapper}>
+      <div className={scss.secondModal}>
+        <div className={scss.img}>
           <Link to="/RegisterPage">
             <img
               width={47}
-              className={styles.arrow}
+              className={scss.arrow}
               src="Images/SecondModalIcons/back7.png"
               alt="backArrow"
             />
@@ -38,54 +38,54 @@ export default function SecondModal() {
           <Link to="/">
             <img
               width={47}
-              className={styles.close}
+              className={scss.close}
               src="Images/SecondModalIcons/close_icon.png"
               alt="close"
             />
           </Link>
         </div>
-        <div className={styles.mainText}>
+        <div className={scss.mainText}>
           <h1>{t("reg.title")}</h1>
           <p>{t("reg.text")}</p>
         </div>
 
-        <div className={styles.manIcon}>
+        <div className={scss.manIcon}>
           <div
             onClick={() => setCheck(!isChecked)}
-            className={isChecked ? styles.checkboxInput : styles.checkboxInputNonActive}
+            className={isChecked ? scss.checkboxInput : scss.checkboxInputNonActive}
           ></div>
           <label
-            className={styles.first}
-            id={styles.checkbox1}
+            className={scss.first}
+            id={scss.checkbox1}
             value={man}
             onChange={() => setMan(!man)}
           />{" "}
-          <div className={styles.woman}>
-            <span className={styles.female}>{t("reg.checkbox2")}</span> <br />
-            <div className={styles.img}>
+          <div className={scss.woman}>
+            <span className={scss.female}>{t("reg.checkbox2")}</span> <br />
+            <div className={scss.img}>
               <img src="Images/SecondModalIcons/male-gender.png" alt="womanGender" />
             </div>
           </div>
         </div>
-        <div className={styles.womanIcon}>
+        <div className={scss.womanIcon}>
           <div
             onClick={() => setCheck2(!isChecked2)}
-            className={isChecked2 ? styles.checkboxInput : styles.checkboxInputNonActive}
+            className={isChecked2 ? scss.checkboxInput : scss.checkboxInputNonActive}
           ></div>
           <label
-            className={styles.first}
-            id={styles.checkbox1}
+            className={scss.first}
+            id={scss.checkbox1}
             value={woman}
             onChange={() => setWoman(!woman)}
           />{" "}
-          <div className={styles.woman}>
-            <span className={styles.female}>{t("reg.checkbox1")}</span> <br />
-            <div className={styles.img}>
+          <div className={scss.woman}>
+            <span className={scss.female}>{t("reg.checkbox1")}</span> <br />
+            <div className={scss.img}>
               <img src="Images/SecondModalIcons/woman.png" alt="womanGender" />
             </div>
           </div>
         </div>
-        <button onClick={addData} className={styles.next}>
+        <button onClick={addData} className={scss.next}>
           {t("reg.next")}
         </button>
       </div>
