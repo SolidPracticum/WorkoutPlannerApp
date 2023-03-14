@@ -27,7 +27,7 @@
   grid-gap: 5vh;
   justify-content: center;
   align-items: center;
-  text-align:center;
+  text-align: center;
 }
 .mainText {
   p {
@@ -70,13 +70,13 @@ input {
   flex-direction: row-reverse;
 }
 .correctWeight {
-  grid-gap: 44%;
+  grid-gap: 22%;
 }
 .beFit {
-  grid-gap: 45%;
+  grid-gap: 23%;
 }
 .muscles {
-  grid-gap: 39%;
+  grid-gap: 19%;
 }
 .weightIcon,
 .fitIcon,
@@ -102,4 +102,26 @@ input {
   font-style: medium;
   line-height: 16px;
   font-size: 14px;
+}
+.checkboxInput {
+  background-color: #7f5af0;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #222429;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-image: url(../../../public/Images/registerPage/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.checkboxInputNonActive {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #222429;
+  border-radius: 3px;
+  border: 1px solid #989898;
 }

@@ -10,6 +10,9 @@ export default function ThirdRegisterModal() {
   const [muscles, setMuscles] = useState(false);
   const { t } = useTranslation();
   const dispatch = useDispatch();
+  const [isChecked, setCheck] = useState(false);
+  const [isChecked2, setCheck2] = useState(false);
+  const [isChecked3, setCheck3] = useState(false);
   const addData = () => {
     if (
       (weight == true && fit == true && muscles == true) ||
@@ -30,50 +33,85 @@ export default function ThirdRegisterModal() {
     <div className={styles.ThirdRegisterModal}>
       <div className={styles.wrapper}>
         <div className={styles.img}>
-          <img
-            className={styles.arrow}
-            src="Images/SecondModalIcons/left-arrow.png"
-            alt="backArrow"
-          />
-          <img className={styles.close} src="Images/SecondModalIcons/close.png" alt="close" />
+          <Link to="./">
+            <img
+              width={47}
+              className={styles.arrow}
+              src="Images/ThirdModalIcons/back7.png"
+              alt="backArrow"
+            />
+          </Link>
+          <Link to="./FourthModal">
+            <img
+              width={47}
+              className={styles.close}
+              src="Images/ThirdModalIcons/close_icon.png"
+              alt="close"
+            />
+          </Link>
         </div>
         <div className={styles.mainText}>
           <h1>{t("goal.title")}</h1>
           <p>{t("goal.text")}</p>
         </div>
-
         <div className={styles.correctWeight}>
-          <input type="checkbox" value={weight} onChange={() => setWeight(!weight)} />{" "}
+          <div
+            onClick={() => setCheck(!isChecked)}
+            className={isChecked ? styles.checkboxInput : styles.checkboxInputNonActive}
+          ></div>
+          <label
+            className={styles.first}
+            id={styles.checkbox1}
+            value={weight}
+            onChange={() => setWeight(!weight)}
+          />{" "}
           <div className={styles.weightIcon}>
             <span className={styles.text1}> {t("goal.first")}</span> <br />
-            <label htmlFor="checkbox1">
-              <img src="Images/ThirdModalIcons/weight-loss.png" alt="weightLoss" />
-            </label>
+            <div className={styles.img}>
+              <img src="Images/ThirdModalIcons/weight-loss.png" alt="wloseWeight Icon" />
+            </div>
           </div>
         </div>
+
         <div className={styles.beFit}>
-          <input type="checkbox" value={fit} onChange={() => setFit(!fit)} />{" "}
-          <div className={styles.fitIcon}>
-            <span className={styles.text2}> {t("goal.second")}</span> <br />
-            <label htmlFor="checkbox2">
+          <div
+            onClick={() => setCheck2(!isChecked2)}
+            className={isChecked2 ? styles.checkboxInput : styles.checkboxInputNonActive}
+          ></div>
+          <label
+            className={styles.first}
+            id={styles.checkbox1}
+            value={weight}
+            onChange={() => setFit(!fit)}
+          />{" "}
+          <div className={styles.weightIcon}>
+            <span className={styles.text1}> {t("goal.second")}</span> <br />
+            <div className={styles.img}>
               <img src="Images/ThirdModalIcons/tape.png" alt="tape" />
-            </label>
+            </div>
           </div>
         </div>
         <div className={styles.muscles}>
-          <input type="checkbox" value={muscles} onChange={() => setMuscles(!muscles)} />{" "}
+          <div
+            onClick={() => setCheck3(!isChecked3)}
+            className={isChecked3 ? styles.checkboxInput : styles.checkboxInputNonActive}
+          ></div>
+          <label
+            className={styles.first}
+            id={styles.checkbox1}
+            value={weight}
+            onChange={() => setMuscles(!muscles)}
+          />{" "}
           <div className={styles.musclesIcon}>
-            <span className={styles.text3}> {t("goal.third")}</span> <br />
-            <label htmlFor="checkbox3">
+            <span className={styles.text1}> {t("goal.third")}</span> <br />
+            <div className={styles.img}>
               <img src="Images/ThirdModalIcons/weight.png" alt="weight" />
-            </label>
+            </div>
           </div>
         </div>
-        <Link to="/FourthRegisterModal">
-          <button onClick={addData} className={styles.next}>
-            {t("goal.next")}
-          </button>
-        </Link>
+        <button onClick={addData} className={styles.next}>
+          {t("goal.next")}
+        </button>
       </div>
     </div>
   );
