@@ -4,8 +4,7 @@ import "./App.scss";
 import HomePage from "./pages/HomePage";
 import SecondModal from "./components/SecondModal/SecondModal";
 import RegisterPage from "./components/registerPage/RegisterPage";
-import FourthModal from './components/FourthModal'
-
+import FourthModal from "./components/FourthModal";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/SecondModal" element={<SecondModal />} />
         <Route path="/register" element={<RegisterPage />} />
-		<Route path='/fourth' element={<FourthModal />} />
+        <Route path="/fourth" element={<FourthModal />} />
       </Routes>
     </div>
   );
