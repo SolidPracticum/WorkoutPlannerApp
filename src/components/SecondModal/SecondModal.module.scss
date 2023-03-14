@@ -94,11 +94,18 @@ text-align: center;
   width: 63%;
   display: flex;
 }
+.womanIcon:hover{
+  background-color: #7f5af0;
+}
+.manIcon:hover{
+  background-color: #7f5af0;
+}
 .male{
   width: 58%;
   display: flex;
 }
 span{
+  color: #ffffff;
   font-size: 13px;
 }
 .checkboxInput {
@@ -112,6 +119,9 @@ span{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.checkboxInput:hover{
+  background-color: #7f5af0;
 }
 .inputColor{
   background-color: #7f5af0;
