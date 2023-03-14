@@ -4,7 +4,7 @@ import "./App.scss";
 import HomePage from "./pages/HomePage";
 import SecondModal from "./components/SecondModal/SecondModal";
 import RegisterPage from "./components/registerPage/RegisterPage";
-import FourthModal from "./components/FourthModal";
+import FourthModal from "./components/fourthModal/FourthModal";
 
 function App() {
   return (

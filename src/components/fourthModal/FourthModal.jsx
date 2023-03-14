@@ -1,6 +1,6 @@
 import React from "react";
 import InputModal from "./InputModal";
-import { toggle } from "../redux/Slice";
+import { toggle } from "../../redux/Slice";
 import { useDispatch, useSelector } from "react-redux";
 import "./FourthModal.scss";
 

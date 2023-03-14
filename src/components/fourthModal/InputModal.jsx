@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./InputModal.scss";
 import { useDispatch } from "react-redux";
-import { addData } from "../redux/Slice";
+import { addData } from "../../redux/Slice";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 function InputModal(props) {
