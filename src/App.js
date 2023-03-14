@@ -4,6 +4,7 @@ import "./App.scss";
 import HomePage from "./pages/HomePage";
 import SecondModal from "./components/SecondModal/SecondModal";
 import RegisterPage from "./components/registerPage/RegisterPage";
+
 function App() {
   return (
     <div className="App">
