@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./ThirdRegisterModal.module.scss";
+import scss from "./ThirdRegisterModal.module.scss";
 import { useTranslation } from "react-i18next";
 import { optionData } from "../../redux/Slice";
 import { useDispatch } from "react-redux";
@@ -30,13 +30,13 @@ export default function ThirdRegisterModal() {
     }
   };
   return (
-    <div className={styles.ThirdRegisterModal}>
-      <div className={styles.wrapper}>
-        <div className={styles.img}>
+    <div className={scss.ThirdRegisterModal}>
+      <div className={scss.wrapper}>
+        <div className={scss.img}>
           <Link to="./">
             <img
               width={47}
-              className={styles.arrow}
+              className={scss.arrow}
               src="Images/ThirdModalIcons/back7.png"
               alt="backArrow"
             />
@@ -44,72 +44,72 @@ export default function ThirdRegisterModal() {
           <Link to="./FourthModal">
             <img
               width={47}
-              className={styles.close}
+              className={scss.close}
               src="Images/ThirdModalIcons/close_icon.png"
               alt="close"
             />
           </Link>
         </div>
-        <div className={styles.mainText}>
+        <div className={scss.mainText}>
           <h1>{t("goal.title")}</h1>
           <p>{t("goal.text")}</p>
         </div>
-        <div className={styles.correctWeight}>
+        <div className={scss.correctWeight}>
           <div
             onClick={() => setCheck(!isChecked)}
-            className={isChecked ? styles.checkboxInput : styles.checkboxInputNonActive}
+            className={isChecked ? scss.checkboxInput : scss.checkboxInputNonActive}
           ></div>
           <label
-            className={styles.first}
-            id={styles.checkbox1}
+            className={scss.first}
+            id={scss.checkbox1}
             value={weight}
             onChange={() => setWeight(!weight)}
           />{" "}
-          <div className={styles.weightIcon}>
-            <span className={styles.text1}> {t("goal.first")}</span> <br />
-            <div className={styles.img}>
+          <div className={scss.weightIcon}>
+            <span className={scss.text1}> {t("goal.first")}</span> <br />
+            <div className={scss.img}>
               <img src="Images/ThirdModalIcons/weight-loss.png" alt="wloseWeight Icon" />
             </div>
           </div>
         </div>
 
-        <div className={styles.beFit}>
+        <div className={scss.beFit}>
           <div
             onClick={() => setCheck2(!isChecked2)}
-            className={isChecked2 ? styles.checkboxInput : styles.checkboxInputNonActive}
+            className={isChecked2 ? scss.checkboxInput : scss.checkboxInputNonActive}
           ></div>
           <label
-            className={styles.first}
-            id={styles.checkbox1}
+            className={scss.first}
+            id={scss.checkbox1}
             value={weight}
             onChange={() => setFit(!fit)}
           />{" "}
-          <div className={styles.weightIcon}>
-            <span className={styles.text1}> {t("goal.second")}</span> <br />
-            <div className={styles.img}>
+          <div className={scss.weightIcon}>
+            <span className={scss.text1}> {t("goal.second")}</span> <br />
+            <div className={scss.img}>
               <img src="Images/ThirdModalIcons/tape.png" alt="tape" />
             </div>
           </div>
         </div>
-        <div className={styles.muscles}>
+        <div className={scss.muscles}>
           <div
             onClick={() => setCheck3(!isChecked3)}
-            className={isChecked3 ? styles.checkboxInput : styles.checkboxInputNonActive}
+            className={isChecked3 ? scss.checkboxInput : scss.checkboxInputNonActive}
           ></div>
           <label
-            className={styles.first}
-            id={styles.checkbox1}
+            className={scss.first}
+            id={scss.checkbox1}
             value={weight}
             onChange={() => setMuscles(!muscles)}
           />{" "}
-          <div className={styles.musclesIcon}>
-            <span className={styles.text1}> {t("goal.third")}</span> <br />
-            <div className={styles.img}>
+          <div className={scss.musclesIcon}>
+            <span className={scss.text1}> {t("goal.third")}</span> <br />
+            <div className={scss.img}>
               <img src="Images/ThirdModalIcons/weight.png" alt="weight" />
             </div>
           </div>
         </div>
-        <button onClick={addData} className={styles.next}>
+        <button onClick={addData} className={scss.next}>
           {t("goal.next")}
         </button>
       </div>

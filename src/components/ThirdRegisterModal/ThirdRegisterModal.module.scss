@@ -22,6 +22,7 @@
 }
 
 .mainText {
+  color: white;
   display: flex;
   flex-direction: column;
   grid-gap: 5vh;
@@ -31,6 +32,7 @@
 }
 .mainText {
   p {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,6 +65,9 @@ input {
   border: none;
   border-radius: 7px;
 }
+span{
+  color: white;
+}
 .correctWeight,
 .beFit,
 .muscles {
@@ -70,13 +75,22 @@ input {
   flex-direction: row-reverse;
 }
 .correctWeight {
-  grid-gap: 22%;
+  grid-gap: 21%;
+}
+.correctWeight:hover{
+  background-color: #7f5af0;
 }
 .beFit {
-  grid-gap: 23%;
+  grid-gap: 22%;
+}
+.beFit:hover{
+  background-color: #7f5af0;
 }
 .muscles {
   grid-gap: 19%;
+}
+.muscles:hover{
+  background-color: #7f5af0;
 }
 .weightIcon,
 .fitIcon,
@@ -115,6 +129,9 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.checkboxInput:hover{
+  background-color: #7f5af0;
 }
 
 .checkboxInputNonActive {
