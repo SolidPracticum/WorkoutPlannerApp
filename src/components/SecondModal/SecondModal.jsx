@@ -13,7 +13,7 @@ export default function SecondModal() {
   const [isChecked2, setCheck2] = useState(false);
   const addData = () => {
     if (man == true && woman == true) {
-      alert(t("reg.alert"));
+      alert(t("register.alert"));
     } else {
       dispatch(
         genderData({
@@ -45,8 +45,8 @@ export default function SecondModal() {
           </Link>
         </div>
         <div className={scss.mainText}>
-          <h1>{t("reg.title")}</h1>
-          <p>{t("reg.text")}</p>
+          <h1>{t("register.title")}</h1>
+          <p>{t("register.text")}</p>
         </div>
 
         <div className={scss.manIcon}>
@@ -61,7 +61,7 @@ export default function SecondModal() {
             onChange={() => setMan(!man)}
           />{" "}
           <div className={scss.woman}>
-            <span className={scss.female}>{t("reg.checkbox2")}</span> <br />
+            <span className={scss.female}>{t("register.checkbox2")}</span> <br />
             <div className={scss.img}>
               <img src="Images/SecondModalIcons/male-gender.png" alt="womanGender" />
             </div>
@@ -79,14 +79,14 @@ export default function SecondModal() {
             onChange={() => setWoman(!woman)}
           />{" "}
           <div className={scss.woman}>
-            <span className={scss.female}>{t("reg.checkbox1")}</span> <br />
+            <span className={scss.female}>{t("register.checkbox1")}</span> <br />
             <div className={scss.img}>
               <img src="Images/SecondModalIcons/woman.png" alt="womanGender" />
             </div>
           </div>
         </div>
         <button onClick={addData} className={scss.next}>
-          {t("reg.next")}
+          {t("register.next")}
         </button>
       </div>
     </div>

@@ -23,8 +23,7 @@
     "title3": "Calorie counting",
     "title4": "Statistics and motivation"
   },
-  "reg":{
-    "register": "register",
+  "register":{
     "title": "Your gender?",
     "text": "By answering the questions, you will help us create your personal training plan",
     "checkbox1": "female",
