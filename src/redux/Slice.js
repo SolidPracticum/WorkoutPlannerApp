@@ -6,7 +6,8 @@ const Slice = createSlice({
     data: [],
     authData: [],
     gender: [],
-    register: []
+    register: [],
+    modal: true
   },
   reducers: {
     authData(state, action) {
@@ -16,6 +17,12 @@ const Slice = createSlice({
       state.register.push(action.payload);
       console.log(state.register[0]);
     },
+    toggle(state) {
+      state.modal = !state.modal;
+    },
+    addData(state, action) {
+      state.data.push(action.payload);
+    },
     reducers: {
       genderDate(state, action) {
         state.gender.push(action.payload);
@@ -24,5 +31,5 @@ const Slice = createSlice({
   }
 });
 
-export const { authData, genderDate, registerData } = Slice.actions;
+export const { authData, genderDate, registerData, toggle, addData } = Slice.actions;
 export const SliceTestReducer = Slice.reducer;
