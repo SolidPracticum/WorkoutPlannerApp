@@ -55,10 +55,6 @@ fieldset {
   border-radius: 5px;
 }
 
-input {
-  margin-right: 10px;
- background-color: #222429;
-}
 .next {
   background-color: #7f5af0;
   margin-top: 20px;
@@ -67,11 +63,18 @@ input {
   width: 313px;
   border: none;
   border-radius: 7px;
+  color: #ffffff;
 }
 .womanIcon {
   display: flex;
   flex-direction: row-reverse;
-  grid-gap:68%;
+  grid-gap:32%;
+}
+.womanIconActive {
+  background-color: #7f5af0;
+  display: flex;
+  flex-direction: row-reverse;
+  grid-gap:29%;
 }
 .woman {
   display: flex;
@@ -80,11 +83,12 @@ input {
 .manIcon {
   display: flex;
   flex-direction: row-reverse;
-  grid-gap: 66%;
+  grid-gap: 32%;
 }
 .man {
   display: flex;
   flex-direction: row-reverse;
+text-align: center;
 }
 .female{
   width: 63%;
@@ -93,8 +97,30 @@ input {
 .male{
   width: 58%;
   display: flex;
-  align-items: center;
 }
 span{
   font-size: 13px;
+}
+.checkboxInput {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #222429;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-image: url(../../../public/Images/registerPage/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.inputColor{
+  background-color: #7f5af0;
+}
+.checkboxInputNonActive {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #222429;
+  border-radius: 3px;
+  border: 1px solid #989898;
 }

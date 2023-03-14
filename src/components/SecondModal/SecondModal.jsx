@@ -9,8 +9,10 @@ export default function SecondModal() {
   const [man, setMan] = useState(false);
   const { t } = useTranslation();
   const dispatch = useDispatch();
+  const [isChecked, setCheck] = useState(false);
+  const [isChecked2, setCheck2] = useState(false);
   const addData = () => {
-    if ((man == true && woman == true) || (woman == false && man == false)) {
+    if (man == true && woman == true) {
       alert(t("reg.alert"));
     } else {
       dispatch(
@@ -27,13 +29,19 @@ export default function SecondModal() {
         <div className={styles.img}>
           <Link to="/RegisterPage">
             <img
+              width={47}
               className={styles.arrow}
-              src="Images/SecondModalIcons/left-arrow.png"
+              src="Images/SecondModalIcons/back7.png"
               alt="backArrow"
             />
           </Link>
           <Link to="/">
-            <img className={styles.close} src="Images/SecondModalIcons/close.png" alt="close" />
+            <img
+              width={47}
+              className={styles.close}
+              src="Images/SecondModalIcons/close_icon.png"
+              alt="close"
+            />
           </Link>
         </div>
         <div className={styles.mainText}>
@@ -42,36 +50,44 @@ export default function SecondModal() {
         </div>
 
         <div className={styles.manIcon}>
-          <input type="checkbox" id={styles.checkbox2} value={man} onChange={() => setMan(!man)} />
-          <div className={styles.man}>
-            <span className={styles.male}>{t("reg.checkbox2")}</span> <br />
-            <label htmlFor="checkbox2">
-              <img src="Images/SecondModalIcons/male-gender.png" alt="maleGender" />
-            </label>
+          <div
+            onClick={() => setCheck(!isChecked)}
+            className={isChecked ? styles.checkboxInput : styles.checkboxInputNonActive}
+          ></div>
+          <label
+            className={styles.first}
+            id={styles.checkbox1}
+            value={man}
+            onChange={() => setMan(!man)}
+          />{" "}
+          <div className={styles.woman}>
+            <span className={styles.female}>{t("reg.checkbox2")}</span> <br />
+            <div className={styles.img}>
+              <img src="Images/SecondModalIcons/male-gender.png" alt="womanGender" />
+            </div>
           </div>
         </div>
         <div className={styles.womanIcon}>
-          <input
+          <div
+            onClick={() => setCheck2(!isChecked2)}
+            className={isChecked2 ? styles.checkboxInput : styles.checkboxInputNonActive}
+          ></div>
+          <label
             className={styles.first}
-            type="checkbox"
             id={styles.checkbox1}
             value={woman}
             onChange={() => setWoman(!woman)}
           />{" "}
           <div className={styles.woman}>
             <span className={styles.female}>{t("reg.checkbox1")}</span> <br />
-            <label htmlFor="checkbox1">
-              <div className={styles.img}>
-                <img src="Images/SecondModalIcons/woman.png" alt="womanGender" />
-              </div>
-            </label>
+            <div className={styles.img}>
+              <img src="Images/SecondModalIcons/woman.png" alt="womanGender" />
+            </div>
           </div>
         </div>
-        <Link to="/ThirdRegisterModal">
-          <button onClick={addData} className={styles.next}>
-            {t("reg.next")}
-          </button>
-        </Link>
+        <button onClick={addData} className={styles.next}>
+          {t("reg.next")}
+        </button>
       </div>
     </div>
   );
