@@ -28,7 +28,7 @@ export default function UserPage() {
           <img src={question} className={scss.notifs} alt="question" />
           <img src={language} className={scss.notifs} alt="language" onClick={isChangeLanguage} />
           <img src={pfp} className={scss.pfp} alt="pfp" />
-          <p className={scss.name}>Aлина</p>
+          <a className={scss.name}>Aлина</a>
           <div className={!open ? scss.SelectTranslation : scss.acive}></div>
         </div>
       </div>
