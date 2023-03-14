@@ -1,7 +1,12 @@
+.pfp{
+    width: 50px;
+    height: 50px;
+    margin: -14px 0px 0px 13px;
+}
 .reg{
     background-color: #2C2E34;
-    width: 100%;
-    margin:1% 0 0 0% ;
+    width: 96%;
+    margin:1% 0 0 2.5% ;
     height: 74px;
     border-radius: 16px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -26,25 +31,10 @@
 .notifs{
     padding-left: 2%;
 }
-.btn{
-    margin-left: 2%;
-    width: 13%;
-    height: 40px;
-    margin-top: -10px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    background-color: #7F5AF0;
-    font-weight: 700;
-    cursor: pointer;
-}
 .name{
     color: white;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 3%;
-    margin-top: -2%;
     font-weight: 700;
+    padding: 1px 5px 0px 14px;
 }
 .SelectTranslation{
     overflow: hidden;
